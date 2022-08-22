@@ -920,11 +920,12 @@ a {
   padding-left: 70px;
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--back-ground-color);
+  font-size: 16px;
 }
 .footer-buttons {
   position: absolute;
   padding-top: 27px;
-  padding-left: 1100px;
+  margin-left: 1100px;
 }
 .buttons-footer {
   display: flex;
