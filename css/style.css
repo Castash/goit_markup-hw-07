@@ -947,7 +947,7 @@ a {
 .modal-form-descr:checked + .modal-form-descr-chek::before {
   background-color: var(--logo-color);
   border: none;
-  background-image: url(/img/galochka-2.svg);
+  background-image: url(/img/galochka.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
