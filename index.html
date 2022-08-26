@@ -82,7 +82,7 @@
                     <span class="modalforminput">
                       <input type="text" name="username" class="modal-form-input" required pattern="[a-zA-Zа-яА-Я]+">
                       <span class="modal-form-input-icon">
-                        <svg width="15" height="12">
+                        <svg width="12" height="12">
                           <use href="./img/icons.svg#icon-Name"></use>
                         </svg>
                       </span>
@@ -97,7 +97,7 @@
                       <input type="tel" name="telnumber" class="modal-form-input" required
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
                       <span class="modal-form-input-icon">
-                        <svg width="15" height="12">
+                        <svg width="13" height="13">
                           <use href="./img/icons.svg#icon-phone"></use>
                         </svg>
                       </span>
@@ -444,7 +444,7 @@
 
   <!-- F  O  O  T  E  R  -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-flex">
       <!-- <a href="" class="logo_end">Web<span>Studio</span></a> -->
       <ul class="flegap1">
         <li>
@@ -464,7 +464,6 @@
             </ul>
           </address>
         </li>
-
         <!-- social network -->
         <li>
           <div class="join_in">
@@ -501,34 +500,25 @@
             </ul>
           </div>
         </li>
-        <!-- subcribe -->
-        <li>
-          <div class="subscribe">
-            <h3 class="h3foot">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
-
-            <label class="modal-form-field-foot" for="">
-
-              <span class="modalforminput">
-                <input type="email" name="email" class="modal-form-input-foot" required>
-                <span class="modal-form-input-icon">
-                  E-mail
-                </span>
-              </span>
-            </label>
-          </div>
-
-        </li>
-
       </ul>
-    </div>
-
-    <div class="footer-buttons">
-      <button data-modal-open class="buttons-footer">
-        Підписатися
-        <svg width="24" height="24">
-          <use href="./img/icons.svg#icon-send"></use>
-        </svg>
-      </button>
+      <!-- subcribe -->
+      <form class="subscribe">
+        <label class="modal-form-field-foot" for="aa">
+          <h3 class="h3foot">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+          <span class="modalforminput">
+            <input id="aa" type="email" name="email" class="modal-form-input-foot" required>
+            <span class="modal-form-input-icon">
+              E-mail
+            </span>
+          </span>
+        </label>
+        <button data-modal-open class="buttons-footer">
+          Підписатися
+          <svg width="24" height="24">
+            <use href="./img/icons.svg#icon-send"></use>
+          </svg>
+        </button>
+      </form>
     </div>
   </footer>
 

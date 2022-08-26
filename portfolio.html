@@ -241,7 +241,7 @@
 
   <!-- F  O  O  T  E  R  -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-flex">
       <!-- <a href="" class="logo_end">Web<span>Studio</span></a> -->
       <ul class="flegap1">
         <li>
@@ -261,7 +261,6 @@
             </ul>
           </address>
         </li>
-
         <!-- social network -->
         <li>
           <div class="join_in">
@@ -298,34 +297,25 @@
             </ul>
           </div>
         </li>
-        <!-- subcribe -->
-        <li>
-          <div class="subscribe">
-            <h3 class="h3foot">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
-
-            <label class="modal-form-field-foot" for="">
-
-              <span class="modalforminput">
-                <input type="email" name="email" class="modal-form-input-foot" required>
-                <span class="modal-form-input-icon">
-                  E-mail
-                </span>
-              </span>
-            </label>
-          </div>
-
-        </li>
-
       </ul>
-    </div>
-
-    <div class="footer-buttons">
-      <button data-modal-open class="buttons-footer">
-        Підписатися
-        <svg width="24" height="24">
-          <use href="./img/icons.svg#icon-send"></use>
-        </svg>
-      </button>
+      <!-- subcribe -->
+      <form class="subscribe">
+        <label class="modal-form-field-foot" for="">
+          <h3 class="h3foot">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+          <span class="modalforminput">
+            <input type="email" name="email" class="modal-form-input-foot" required>
+            <span class="modal-form-input-icon">
+              E-mail
+            </span>
+          </span>
+        </label>
+        <button data-modal-open class="buttons-footer-p">
+          Підписатися
+          <svg width="24" height="24">
+            <use href="./img/icons.svg#icon-send"></use>
+          </svg>
+        </button>
+      </form>
     </div>
   </footer>
 </body>

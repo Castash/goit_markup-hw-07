@@ -634,6 +634,9 @@ a {
   display: flex;
   max-width: 1600px;
 }
+.footer-flex {
+  display: flex;
+}
 .join_in {
   margin-top: 10px;
   align-items: flex-start;
@@ -649,9 +652,9 @@ a {
   margin-bottom: 20px;
 }
 .subscribe {
+  display: flex;
   margin-top: 10px;
-  width: 358px;
-  align-items: flex-start;
+  justify-content: flex-end;
 }
 .email {
   font-family: "Roboto";
@@ -667,13 +670,13 @@ a {
 /* КЛАСС СПИСКУ ФУТЕРА ДЛЯ РОЗЄДНАННЯ ЕЛЕМЕНТІВ */
 .flegap {
   display: flex;
-  gap: 90px;
-  width: 100%;
+  gap: 50px;
+  width: 51%;
 }
 .flegap1 {
   display: flex;
   gap: 50px;
-  width: 100%;
+  width: 51%;
 }
 .social-list-link-footer {
   width: 44px;
@@ -954,6 +957,9 @@ a {
   text-decoration: underline;
   margin-left: 4px;
 }
+.modal-form-field-foot {
+  width: 358px;
+}
 .modal-form-input-foot {
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -971,8 +977,9 @@ a {
   margin-left: 1100px;
 }
 .buttons-footer {
+  margin-left: 12px;
+  margin-top: 36px;
   display: flex;
-  gap: 10px;
   background-color: var(--logo-color);
   color: var(--white-main-color);
   width: 200px;
@@ -1077,4 +1084,30 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.buttons-footer-p {
+  margin-left: 85px;
+  margin-top: 38px;
+  display: flex;
+  background-color: var(--logo-color);
+  color: var(--white-main-color);
+  width: 200px;
+  height: 50px;
+  border: var(--back-ground-color);
+  /* left: 700px;
+  top: 430px; */
+  font-family: "Roboto";
+  letter-spacing: 0.06em;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color var(--transition-dur-func);
+}
+.buttons-footer:hover,
+.buttons-footer:focus {
+  background-color: var(--back-gtound-key-kolor);
 }
