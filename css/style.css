@@ -1107,7 +1107,7 @@ a {
   border-radius: 4px;
   transition: background-color var(--transition-dur-func);
 }
-.buttons-footer:hover,
-.buttons-footer:focus {
+.buttons-footer-p:hover,
+.buttons-footer-p:focus {
   background-color: var(--back-gtound-key-kolor);
 }
