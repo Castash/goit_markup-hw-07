@@ -823,7 +823,7 @@ a {
 /* клас для іконок */
 .modal-form-input-icon {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 15px;
     transform: translate(0, -50%);
     transition: var(--transition-dur-func);
@@ -837,6 +837,7 @@ a {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 /* опис класу вводу данних */
 .modal-form-input {
     width: 100%;
@@ -938,7 +939,7 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 20px;
 
     color: var(--color-link);
@@ -980,6 +981,7 @@ a {
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--back-ground-color);
     font-size: 16px;
+    width: 100%;
 }
 .port {
     width: 80%;
@@ -1076,6 +1078,22 @@ a {
     position: relative;
     height: 50px;
     margin-top: 17px;
+}
+.modal-form-input-icon-footer {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+    transition: var(--transition-dur-func);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 .buttons-footer {
     margin-left: 12px;
