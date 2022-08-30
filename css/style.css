@@ -817,7 +817,7 @@ a {
 .modalforminput_modal {
     display: block;
     position: relative;
-    height: 50px;
+    height: 40px;
 }
 
 /* клас для іконок */
@@ -939,7 +939,7 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
 
     color: var(--color-link);
