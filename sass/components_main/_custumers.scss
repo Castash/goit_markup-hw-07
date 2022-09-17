@@ -1,0 +1,27 @@
+/* -- C U S T O M E R S --> */
+
+.what_we_doing-item {
+    width: 170px;
+    height: 92px;
+}
+
+.bordericon {
+    display: flex;
+    border: 1px solid var(--icon-fill-color);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-fill-color);
+    width: 170px;
+    height: 92px;
+    transition: color var(--transition-dur-func),
+        border-color var(--transition-dur-func);
+}
+.bordericon:hover,
+.bordericon:focus {
+    border-color: var(--logo-color);
+    color: var(--logo-color);
+}
+.svg-customer {
+    fill: currentColor;
+}

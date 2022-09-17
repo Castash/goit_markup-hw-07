@@ -1,0 +1,41 @@
+/* palitra:
+колір основного тексту: color: #000 - primary-text-color
+колір вторичного тексту: #212121  - h2-text-color
+колір посилань:  color: #2196f3
+колір посилань(номер тел. пошта): #757575
+колір текстерії: rgba(117, 117, 117, 0.5);
+бекграунт колор секцій переваги та what_we_doing:
+#E5E5E5
+колір тексту в текстерії: rgba(117, 117, 117, 0.5)
+колір бордера форми:rgba(33, 33, 33, 0.2);
+футер:
+лого: 
+rgba(33, 150, 243, 1)
+rgba(255, 255, 255, 1)
+адреса: 
+rgba(255, 255, 255, 1)
+колір  посилань(номер тел. пошта)-
+rgba(255, 255, 255, 0.6)
+*/
+:root {
+    --primary-text-color: #000;
+    --h2-h3-text-color: #212121;
+    --logo-color: #2196f3;
+    --color-link: #757575;
+    --back-ground-color: rgba(47, 48, 58);
+    --white-main-color: #ffffff;
+    --back-gtound-key-kolor: #188ce8;
+    --icon-fill-color: #afb1b8;
+    --back-ground-key-color-foot: rgba(255, 255, 255, 0.1);
+    --border-form: rgba(33, 33, 33, 0.2);
+    --textariya-color-next: rgba(117, 117, 117, 0.5);
+    --transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    color: var(--primary-text-color);
+    font-family: "Roboto";
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}

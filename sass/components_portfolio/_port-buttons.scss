@@ -1,0 +1,30 @@
+.buttons-head {
+    color: var(--h2-h3-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Roboto";
+    font-style: normal;
+    cursor: pointer;
+    border: #ffffff;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    padding: 6px 22px;
+    transition: color var(--transition-dur-func),
+        background-color var(--transition-dur-func);
+}
+.buttons-head:hover,
+.buttons-head:focus {
+    color: var(--white-main-color);
+    background-color: var(--back-gtound-key-kolor);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-dur-func);
+}
+
+/* задання класу на li кнопок */
+.spisok-button:not(:last-child) {
+    display: flex;
+    margin-right: 8px;
+}

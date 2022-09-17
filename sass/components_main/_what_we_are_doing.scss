@@ -1,0 +1,40 @@
+/* <!-- C H I M  M I Z A U M A E M O S  --> */
+.what_we_doing {
+    display: flex;
+    gap: 30px;
+}
+.h2-mainpage {
+    /* font-family: "Roboto"; */
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--h2-h3-text-color);
+}
+
+.menu-item-1 {
+    position: relative;
+}
+
+.overlay-what_we_doing {
+    position: absolute;
+    left: 0;
+    top: 75%;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    color: var(--white-main-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    line-height: 100%;
+    align-items: center;
+    justify-content: center;
+}

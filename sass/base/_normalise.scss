@@ -1,0 +1,31 @@
+// NORMALAIZE//
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.img {
+    width: 270px;
+    height: 260px;
+}
+button {
+    cursor: pointer;
+}
+/* відміняємо крапки списків */
+ul {
+    list-style: none;
+}
+/* Скасовуємо підкреслення у посилань */
+a {
+    text-decoration: none;
+    font-style: normal;
+}

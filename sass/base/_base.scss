@@ -1,0 +1,66 @@
+.body {
+    color: var(--primary-text-color);
+    font-family: "Roboto";
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*--------- GENERAL--------- */
+
+/* всі контейнери width: 1170px; */
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.container1 {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+/* всі контейнери width: 1600px; */
+.wide {
+    max-width: 1630px;
+}
+/* класс приховування */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.pading-boton-0 {
+    padding-bottom: 0px;
+}
+
+.button {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* всі контейнери width: 1600px; */
+.wide {
+    max-width: 1630px;
+}
+.port {
+    width: 80%;
+    height: 92%;
+}
+
+.inde {
+    width: 100%;
+}

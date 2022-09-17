@@ -1,0 +1,23 @@
+// main
+@import "./base/normalise";
+@import "./base/variables";
+@import "./base/base";
+@import "./base/logo";
+
+@import "./components_main/header";
+
+@import "./components_main/hero";
+@import "./utils/modal";
+@import "./components_main/perevagi";
+@import "./components_main/what_we_are_doing";
+@import "./components_main/owr_team";
+@import "./components_main/custumers";
+
+@import "./components_main/footer";
+
+// portfolio
+@import "./components_portfolio/port-buttons";
+@import "./components_portfolio/port_posters";
+@import "./components_portfolio/port_main";
+@import "./components_portfolio/port_card";
+@import "./components_portfolio/port_footer";

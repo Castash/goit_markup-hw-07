@@ -1,0 +1,105 @@
+/* <!-- C O M A N D A --> */
+/* оформлення заголовків постерів та опису */
+
+/* фон */
+.comanda {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+    background-color: #f5f4fa;
+}
+/* класс для заголовка H2 НАША КОМАНДА */
+.down {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+.posterr {
+    padding: 30px;
+    text-align: center;
+}
+
+/* клас всіх карток */
+.kartoteka {
+    justify-content: space-between;
+}
+
+/* учасники */
+/* класс постер */
+.poster {
+    width: 270px;
+    height: 368px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+}
+.poster:not(:last-child) {
+    margin-right: 40px;
+}
+/* фото */
+
+.member-team {
+    width: 1170px;
+    height: 368px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ,імя, */
+
+.h3titleposter {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+    color: var(--h2-h3-text-color);
+}
+/* чим замається */
+.opisposter {
+    margin-top: 16px;
+    /* justify-content: center;
+  font-style: normal; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--color-link);
+    margin-bottom: 16px;
+}
+/* КЛАС ОПИСУ SVG */
+.social-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* LINK SOCIAL WEB
+lmlml
+  */
+.social-link {
+    display: flex;
+    width: 44px;
+    background-color: var(--white-main-color);
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color var(--transition-dur-func),
+        fill var(--transition-dur-func);
+}
+/* клас SVG */
+
+.social-icon {
+    fill: var(--icon-fill-color);
+}
+.social-link:focus,
+.social-link:hover {
+    background-color: var(--logo-color);
+}
+.social-link:focus .social-icon,
+.social-link:hover .social-icon {
+    fill: var(--white-main-color);
+}
