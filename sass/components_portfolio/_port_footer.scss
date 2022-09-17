@@ -39,8 +39,9 @@
     justify-content: center;
     border-radius: 4px;
     transition: background-color var(--transition-dur-func);
-}
-.buttons-footer:hover,
-.buttons-footer:focus {
-    background-color: var(--back-gtound-key-kolor);
+
+    &:hover,
+    &:focus {
+        background-color: var(--back-gtound-key-kolor);
+    }
 }

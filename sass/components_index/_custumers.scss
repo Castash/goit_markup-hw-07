@@ -16,12 +16,13 @@
     height: 92px;
     transition: color var(--transition-dur-func),
         border-color var(--transition-dur-func);
+    &:hover,
+    &:focus {
+        border-color: var(--logo-color);
+        color: var(--logo-color);
+    }
 }
-.bordericon:hover,
-.bordericon:focus {
-    border-color: var(--logo-color);
-    color: var(--logo-color);
-}
+
 .svg-customer {
     fill: currentColor;
 }

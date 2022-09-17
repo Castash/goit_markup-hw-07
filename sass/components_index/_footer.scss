@@ -1,15 +1,13 @@
 .logo_end {
     display: flex;
-    /* margin-top: 60px; */
     margin-bottom: 20px;
     color: var(--logo-color);
     font-weight: bold;
     font-size: 26px;
     font-family: "Raleway", "sans-serif";
-    /* line-height: 2.2475%; */
-}
-.logo_end > span {
-    color: var(--white-main-color);
+    & > span {
+        color: var(--white-main-color);
+    }
 }
 
 .footer {
@@ -84,15 +82,14 @@
     fill: var(--white-main-color);
     background-color: var(--back-ground-key-color-foot);
     transition: background-color var(--transition-dur-func);
-}
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
-    background-color: var(--back-gtound-key-kolor);
-}
-
-.social-list-link-footer:hover .social-link-icon-footer,
-.social-link-link-footer:focus .social-link-icon-footer {
-    fill: var(--white-main-color);
+    &:hover,
+    &:focus {
+        background-color: var(--back-gtound-key-kolor);
+    }
+    &:hover .social-link-icon-footer,
+    &:focus .social-link-icon-footer {
+        fill: var(--white-main-color);
+    }
 }
 
 /* --------------- */
@@ -103,26 +100,23 @@
 }
 .adress {
     color: rgba(255, 255, 255, 1);
-    /* font-weight: 400; */
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 9px;
     width: 200px;
-    /* font-family: "Roboto"; */
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
 }
 .site-nav-contact-footer {
     color: rgba(255, 255, 255, 0.6);
-    /* font-weight: 400; */
     font-size: 14px;
     line-height: 150%;
     margin-bottom: 9px;
     transition: color var(--transition-dur-func);
-}
-.adress:hover,
-.adress:focus {
-    color: var(--logo-color);
-}
-.site-nav-contact-footer:hover,
-.site-nav-contact-footer:focus {
-    color: var(--logo-color);
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
 }

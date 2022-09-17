@@ -33,10 +33,11 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
 }
-.poster:not(:last-child) {
-    margin-right: 40px;
-}
+
 /* фото */
 
 .member-team {
@@ -89,17 +90,17 @@ lmlml
     align-items: center;
     transition: background-color var(--transition-dur-func),
         fill var(--transition-dur-func);
+    &:focus,
+    &:hover {
+        background-color: var(--logo-color);
+    }
+    &:focus .social-icon,
+    &:hover .social-icon {
+        fill: var(--white-main-color);
+    }
 }
 /* клас SVG */
 
 .social-icon {
     fill: var(--icon-fill-color);
-}
-.social-link:focus,
-.social-link:hover {
-    background-color: var(--logo-color);
-}
-.social-link:focus .social-icon,
-.social-link:hover .social-icon {
-    fill: var(--white-main-color);
 }
