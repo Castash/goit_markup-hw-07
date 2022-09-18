@@ -1,22 +1,27 @@
 // main
 @import "./base/normalise";
-@import "./base/variables";
-@import "./base/base";
+@import "./utils/variables";
+@import "./base/common";
+@import "./base/container";
 @import "./base/logo";
 
-@import "./components_index/header";
+@import "./components_main/modal";
+@import "./components_main/backdrop";
+@import "./components_main/modal-btn";
+@import "./components_main/modal-form";
 
-@import "./components_index/hero";
-@import "./utils/modal";
-@import "./components_index/perevagi";
-@import "./components_index/what_we_are_doing";
-@import "./components_index/owr_team";
-@import "./components_index/custumers";
+@import "./components_main/perevagi";
+@import "./components_main/what_we_are_doing";
+@import "./components_main/owr_team";
+@import "./components_main/custumers";
 
-@import "./components_index/footer";
+@import "./layout_main/footer";
+@import "./layout_main/header";
+@import "./layout_main/hero";
 
 // portfolio
+@import "./layout_portfolio/port_main";
+@import "./layout_portfolio/port_footer";
+
 @import "./components_portfolio/port-buttons";
-@import "./components_portfolio/port_main";
 @import "./components_portfolio/port_card";
-@import "./components_portfolio/port_footer";
