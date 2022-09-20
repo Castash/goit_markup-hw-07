@@ -1,5 +1,5 @@
 // LOGO
-.logo {
+.page-header_nav__logo {
     color: var(--logo-color);
     font-weight: bold;
     font-size: 26px;
@@ -14,4 +14,8 @@
     & > span {
         color: var(--primary-text-color);
     }
+}
+.logo-foot {
+    color: var(--logo-color);
+    font-family: "Raleway";
 }

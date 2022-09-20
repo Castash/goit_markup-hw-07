@@ -1,4 +1,4 @@
-.logo_end {
+.footer-list__logo {
     display: flex;
     margin-bottom: 20px;
     color: var(--logo-color);
@@ -21,11 +21,11 @@
 .footer-flex {
     display: flex;
 }
-.join_in {
+.footer-list_join_in {
     margin-top: 10px;
     align-items: flex-start;
 }
-.h3foot {
+.footer-list-title {
     color: var(--white-main-color);
     font-style: normal;
     font-weight: 700;
@@ -43,7 +43,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 24px;
 }
-.subscribe {
+.footer-subscribe {
     display: flex;
     margin-top: 10px;
     justify-content: flex-end;
@@ -60,12 +60,8 @@
     color: rgba(255, 255, 255, 0.6);
 }
 /* КЛАСС СПИСКУ ФУТЕРА ДЛЯ РОЗЄДНАННЯ ЕЛЕМЕНТІВ */
-.flegap {
-    display: flex;
-    gap: 50px;
-    width: 51%;
-}
-.flegap1 {
+
+.footer-list {
     display: flex;
     gap: 50px;
     width: 51%;
@@ -84,18 +80,14 @@
     &:focus {
         background-color: var(--back-gtound-key-kolor);
     }
-    &:hover .social-link-icon-footer,
-    &:focus .social-link-icon-footer {
+    &:hover .social-list-link-footer__icon,
+    &:focus .social-list-link-footer__icon {
         fill: var(--white-main-color);
     }
 }
 
 /* --------------- */
 
-.logo-foot {
-    color: var(--logo-color);
-    font-family: "Raleway";
-}
 .adress {
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
@@ -107,7 +99,7 @@
         color: var(--logo-color);
     }
 }
-.site-nav-contact-footer {
+.footer-list__contact {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 150%;
@@ -116,5 +108,37 @@
     &:hover,
     &:focus {
         color: var(--logo-color);
+    }
+}
+.footer-subscribe__buttons {
+    margin-left: 12px;
+    margin-top: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--logo-color);
+    color: var(--white-main-color);
+    width: 200px;
+    height: 50px;
+    border: var(--back-ground-color);
+    font-family: "Roboto";
+    letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 4px;
+    -webkit-transition: background-color var(--transition-dur-func);
+    transition: background-color var(--transition-dur-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--back-gtound-key-kolor);
     }
 }

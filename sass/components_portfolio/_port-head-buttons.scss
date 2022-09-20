@@ -1,4 +1,4 @@
-.buttons-head {
+.filters-list__buttons {
     color: var(--h2-h3-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -24,7 +24,7 @@
 }
 
 /* задання класу на li кнопок */
-.spisok-button:not(:last-child) {
+.filters-list:not(:last-child) {
     display: flex;
     margin-right: 8px;
 }

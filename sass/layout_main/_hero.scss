@@ -1,4 +1,4 @@
-.HERO {
+.hero {
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
@@ -11,7 +11,7 @@
     padding: 200px 0px;
 }
 
-.mainhead {
+.hero__mainhead {
     display: flex;
     text-align: center;
     height: 120px;
@@ -29,7 +29,7 @@
     align-items: center;
 }
 /* Кнопка HERO */
-.buttons-head-main {
+.hero_buttton {
     display: flex;
     background-color: var(--logo-color);
     color: var(--white-main-color);

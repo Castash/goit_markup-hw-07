@@ -5,7 +5,7 @@
     height: 92px;
 }
 
-.bordericon {
+.customer {
     display: flex;
     border: 1px solid var(--icon-fill-color);
     border-radius: 4px;
@@ -23,6 +23,6 @@
     }
 }
 
-.svg-customer {
+.customer__svg {
     fill: currentColor;
 }

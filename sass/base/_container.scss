@@ -4,8 +4,17 @@
     margin-left: auto;
     margin-right: auto;
 }
+.footer__container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
 .section {
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+.sectionp1 {
     padding-bottom: 94px;
 }
 .container1 {
@@ -18,7 +27,6 @@
 .wide {
     max-width: 1630px;
 }
-/* всі контейнери width: 1600px; */
-.wide {
-    max-width: 1630px;
+.padding-top-0 {
+    padding-top: 0px;
 }

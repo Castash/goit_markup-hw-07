@@ -1,5 +1,5 @@
 /* H E A D E R */
-.page-header-container {
+.page-header {
     border-bottom: Solid 1px #ececec;
     height: 80px;
     max-width: 1600px;
@@ -17,13 +17,13 @@
 }
 
 /* навігація сайту */
-.site-nav1 {
+.page-header_nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.site-nav {
+.page-header_nav__list_item {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -58,7 +58,7 @@
 
 /* розсунення елементів навігації */
 
-.page-nav {
+.page-header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -74,19 +74,19 @@
 }
 
 /* класс контакти хедера */
-.contact-nav {
+.page-header__nav__contact {
     margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.contact-items:not(:last-child) {
+.page-header__nav__contact__items:not(:last-child) {
     padding-right: 47px;
 }
 
 /* посилання на номер телефону та е-mail */
-.site-nav-contact-header {
+.page-header__nav__contact__items_contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,14 +111,14 @@
     }
 
     /* покраска SVG при ховері і фокусі */
-    &:hover .header-links-svg,
-    &:focus .header-links-svg {
+    &:hover .page-header__nav__contact__items_contact__svg,
+    &:focus .page-header__nav__contact__items_contact__svg {
         fill: var(--logo-color);
     }
 }
 
 /* SVG */
-.header-links-svg {
+.page-header__nav__contact__items_contact__svg {
     fill: var(--color-link);
     display: -webkit-box;
     display: -ms-flexbox;

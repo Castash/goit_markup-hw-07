@@ -1,4 +1,4 @@
-.cardmain {
+.cards_cardmain {
     border: solid 1px#eeeeee;
     position: relative;
     overflow: hidden;
@@ -10,11 +10,11 @@
     }
 }
 
-.cardmain-link-wrapper {
+.cards_cardmain-link-wrappe {
     max-width: 100%;
     height: 100%;
 }
-.cardmain-img-wrapper {
+.cards_cardmain-link-wrapper_img {
     position: relative;
     overflow: hidden;
     &:hover .overlay,
@@ -42,18 +42,18 @@
 }
 
 /* клас розміщення карток */
-.cards-1 {
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.card {
-    background-color: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+.cards_cardmain_description {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 24px;
 }
-.Portfolio-name-card {
+.cards_cardmain_description__subtitle {
     font-family: "Roboto";
     color: var(--h2-h3-text-color);
     font-weight: 700;
@@ -65,15 +65,9 @@
 }
 
 /* опис постерів */
-.type-of-work {
+.cards_cardmain_description__type {
     color: var(--color-link);
     font-size: 16px;
     line-height: 187.5%;
     text-align: left;
-}
-.card-2 {
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-bottom: 20px;
-    padding-right: 24px;
 }
