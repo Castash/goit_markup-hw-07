@@ -11,7 +11,7 @@
     padding: 200px 0px;
 }
 
-.hero__mainhead {
+.hero__title {
     display: flex;
     text-align: center;
     height: 120px;
@@ -29,7 +29,7 @@
     align-items: center;
 }
 /* Кнопка HERO */
-.hero_buttton {
+.hero__buttton {
     display: flex;
     background-color: var(--logo-color);
     color: var(--white-main-color);

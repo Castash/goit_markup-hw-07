@@ -1,8 +1,8 @@
 /* H E A D E R */
-.page-header {
+.header {
     border-bottom: Solid 1px #ececec;
     height: 80px;
-    max-width: 1600px;
+
     padding-left: 215px;
     padding-right: 215px;
     display: -webkit-box;
@@ -15,15 +15,29 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+/* розсунення елементів навігації сайту */
+.header__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto";
+    font-weight: 500;
+}
 
 /* навігація сайту */
-.page-header_nav__list {
+.header__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.page-header_nav__list_item {
+.header__link {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -58,35 +72,20 @@
 
 /* розсунення елементів навігації */
 
-.page-header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 1200px;
-    /* justify-content: space-between; */
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Roboto";
-    font-weight: 500;
-}
-
 /* класс контакти хедера */
-.page-header__nav__contact {
+.header__contacts {
     margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 
-.page-header__nav__contact__items:not(:last-child) {
+.header__contact__element:not(:last-child) {
     padding-right: 47px;
 }
 
 /* посилання на номер телефону та е-mail */
-.page-header__nav__contact__items_contact {
+.header__contact__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,14 +110,14 @@
     }
 
     /* покраска SVG при ховері і фокусі */
-    &:hover .page-header__nav__contact__items_contact__svg,
-    &:focus .page-header__nav__contact__items_contact__svg {
+    &:hover .header__contact__svg,
+    &:focus .header__contact__svg {
         fill: var(--logo-color);
     }
 }
 
 /* SVG */
-.page-header__nav__contact__items_contact__svg {
+.header__contact__svg {
     fill: var(--color-link);
     display: -webkit-box;
     display: -ms-flexbox;

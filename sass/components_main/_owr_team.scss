@@ -1,24 +1,46 @@
-/* <!-- C O M A N D A --> */
+/* <!--  T E A M--> */
 /* оформлення заголовків постерів та опису */
 
 /* фон */
 .team {
     background-color: #f5f4fa;
 }
-.team-member {
+.team__member {
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
+.team__posterr {
+    padding: 30px;
+    text-align: center;
+}
+
+/* ,імя, */
+
+.team__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+    color: var(--h2-h3-text-color);
+}
+/* чим замається */
+.team__specialty {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--color-link);
+    margin-bottom: 16px;
+}
 .down {
     padding-top: 94px;
     padding-bottom: 50px;
-}
-.team-member__posterr {
-    padding: 30px;
-    text-align: center;
 }
 
 /* клас всіх карток */
@@ -41,36 +63,6 @@
     }
 }
 
-/* фото */
-
-// .member-team {
-//     width: 1170px;
-//     height: 368px;
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-/* ,імя, */
-
-.team-member__posterr__name {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    margin-bottom: 10px;
-    letter-spacing: 0.03em;
-    color: var(--h2-h3-text-color);
-}
-/* чим замається */
-.team-member__posterr__opisposter {
-    margin-top: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    color: var(--color-link);
-    margin-bottom: 16px;
-}
 /* КЛАС ОПИСУ SVG */
 .social-list {
     display: flex;
@@ -81,7 +73,7 @@
 /* LINK SOCIAL WEB
 lmlml
   */
-.social-list-link {
+.social-list__link {
     display: flex;
     width: 44px;
     background-color: var(--white-main-color);
@@ -95,13 +87,13 @@ lmlml
     &:hover {
         background-color: var(--logo-color);
     }
-    &:focus .social-list-link__icon,
-    &:hover .social-list-link__icon {
+    &:focus .social-list__icon,
+    &:hover .social-list__icon {
         fill: var(--white-main-color);
     }
 }
 /* клас SVG */
 
-.social-list-link__icon {
+.social-list__icon {
     fill: var(--icon-fill-color);
 }

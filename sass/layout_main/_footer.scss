@@ -1,4 +1,11 @@
-.footer-list__logo {
+.footer {
+    background-color: var(--back-ground-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: center;
+    display: flex;
+}
+.footer__logo {
     display: flex;
     margin-bottom: 20px;
     color: var(--logo-color);
@@ -10,22 +17,37 @@
     }
 }
 
-.footer {
-    background-color: var(--back-ground-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items: center;
+.footer__list {
     display: flex;
-    max-width: 1600px;
+    flex-direction: column;
+    gap: 9px;
+    width: max-content;
 }
-.footer-flex {
-    display: flex;
+
+.footer__adress {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 9px;
+    width: 200px;
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
 }
-.footer-list_join_in {
-    margin-top: 10px;
-    align-items: flex-start;
+.footer__contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 9px;
+    transition: color var(--transition-dur-func);
+    &:hover,
+    &:focus {
+        color: var(--logo-color);
+    }
 }
-.footer-list-title {
+
+.footer__title {
     color: var(--white-main-color);
     font-style: normal;
     font-weight: 700;
@@ -33,40 +55,9 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
-.h3foot_index {
-    color: var(--white-main-color);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    margin-bottom: 24px;
-}
-.footer-subscribe {
-    display: flex;
-    margin-top: 10px;
-    justify-content: flex-end;
-}
-.email {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-/* КЛАСС СПИСКУ ФУТЕРА ДЛЯ РОЗЄДНАННЯ ЕЛЕМЕНТІВ */
-
-.footer-list {
-    display: flex;
-    gap: 50px;
-    width: 51%;
-}
-.social-list-link-footer {
+.footer__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -80,41 +71,29 @@
     &:focus {
         background-color: var(--back-gtound-key-kolor);
     }
-    &:hover .social-list-link-footer__icon,
-    &:focus .social-list-link-footer__icon {
+    &:hover .footer__icon,
+    &:focus .footer__icon {
         fill: var(--white-main-color);
     }
 }
 
-/* --------------- */
-
-.adress {
-    color: rgba(255, 255, 255, 1);
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 9px;
-    width: 200px;
-    &:hover,
-    &:focus {
-        color: var(--logo-color);
-    }
-}
-.footer-list__contact {
+.email {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 14px;
-    line-height: 150%;
-    margin-bottom: 9px;
-    transition: color var(--transition-dur-func);
-    &:hover,
-    &:focus {
-        color: var(--logo-color);
-    }
 }
-.footer-subscribe__buttons {
-    margin-left: 12px;
-    margin-top: 36px;
+/* КЛАСС СПИСКУ ФУТЕРА ДЛЯ РОЗЄДНАННЯ ЕЛЕМЕНТІВ */
+
+.footer__buttons {
     display: -webkit-box;
     display: -ms-flexbox;
+    margin-left: 12px;
     display: flex;
     background-color: var(--logo-color);
     color: var(--white-main-color);
@@ -133,6 +112,7 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    gap: 10px;
     border-radius: 4px;
     -webkit-transition: background-color var(--transition-dur-func);
     transition: background-color var(--transition-dur-func);

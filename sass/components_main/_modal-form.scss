@@ -1,36 +1,65 @@
 /* ------MODAL-FORM------- */
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 580px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: background-color var(--transition-dur-func);
+}
 .modal__form {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
-.modalforminput_modal {
+
+.modal__container {
+    height: 100%;
+    padding: 40px;
+}
+/* заголовок модалки */
+.modal__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: var(--h2-h3-text-color);
+    padding-bottom: 16px;
+    text-align: center;
+}
+.modal__field:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+.modal__field-title {
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
+    color: var(--color-link);
+}
+
+.modal__input-field {
     display: block;
     position: relative;
     height: 40px;
 }
-
-/* клас для іконок */
-.modal-form-input-icon {
-    position: absolute;
-    top: 0%;
-    left: 15px;
-    transform: translate(-50%, 100%);
-    transition: var(--transition-dur-func);
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
 /* опис класу вводу данних */
-.modal-form-input {
+.modal__input {
     width: 100%;
     border: 1px solid var(--border-form);
     border-radius: 4px;
@@ -51,15 +80,25 @@
     }
 }
 
-.modal-form-descr {
-    border: 1px solid var(--border-form);
-    outline: none;
-    &:focus {
-        border: var(--logo-color);
-    }
+/* клас для іконок */
+.modal__icon {
+    position: absolute;
+    top: 0%;
+    left: 15px;
+    transform: translate(-16%, 112%);
+    transition: var(--transition-dur-func);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.modal-form-input-desc {
+.modal__field-title {
     display: block;
     font-family: "Roboto";
     font-style: normal;
@@ -69,11 +108,8 @@
     margin-bottom: 4px;
     color: var(--color-link);
 }
-.modal__form_container_field:not(:last-child) {
-    padding-bottom: 10px;
-}
 
-.modal-form-messege {
+.modal__comment {
     resize: none;
     width: 100%;
     height: 120px;
@@ -82,6 +118,8 @@
     color: var(--textariya-color-next);
     border-radius: 4px;
     font-family: "Roboto";
+    padding: 16px 12px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -91,7 +129,15 @@
     }
 }
 
-.modal-form-descr-chek {
+.modal__descr {
+    border: 1px solid var(--border-form);
+    outline: none;
+    &:focus {
+        border: var(--logo-color);
+    }
+}
+
+.modal__descr-chek {
     display: flex;
     align-items: center;
     font-family: "Roboto";
@@ -111,13 +157,13 @@
         display: block;
         width: 16px;
         height: 15px;
-        border: 1px solid var(--h2-h3-text-color);
+        border: 2px solid var(--h2-h3-text-color);
         cursor: pointer;
         border-radius: 4px;
     }
 }
 
-.modal-form-descr:checked + .modal-form-descr-chek::before {
+.modal__descr:checked + .modal__descr-chek::before {
     background-color: var(--logo-color);
     border: none;
     background-image: url(../img/galochka.svg);
@@ -125,51 +171,36 @@
     background-position: 50% 50%;
 }
 /* класс для посилання умови договору */
-.ahref-umovi {
+.modal__conditions {
     color: var(--logo-color);
     text-decoration: underline;
     margin-left: 4px;
 }
-.footer-subscribe__field {
-    width: 358px;
+// f o o t e r //
+
+.footer__form {
+    display: flex;
 }
-.footer-subscribe__input {
+.footer__input-main {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    width: 358px;
     height: 50px;
-    padding-left: 70px;
+    padding-left: 12px;
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--back-ground-color);
     font-size: 16px;
-    width: 100%;
 }
-.port {
-    width: 80%;
-    height: 92%;
-}
-.inde {
-    width: 100%;
-}
-.footer-subscribe__span {
-    display: block;
-    position: relative;
-    height: 50px;
-    margin-top: 17px;
-}
-.footer-subscribe__icon {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translate(0, -50%);
-    transition: var(--transition-dur-func);
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
+
+.footer__input-portfolio {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 12px;
     color: rgba(255, 255, 255, 0.6);
+    background-color: var(--back-ground-color);
+    font-size: 16px;
+    width: 343px;
+    height: 46px;
 }

@@ -1,10 +1,10 @@
 /* <!-- C H I M  M I Z A U M A E M O S  --> */
 
-.item__what-we-are-doing {
+.what-we-are-doing__item {
     position: relative;
 }
 
-.overlay__item__what-we-are-doing {
+.what-we-are-doing__overlay {
     position: absolute;
     left: 0;
     top: 75%;
@@ -21,7 +21,4 @@
     line-height: 100%;
     align-items: center;
     justify-content: center;
-}
-.item__what-we-are-doing {
-    position: relative;
 }

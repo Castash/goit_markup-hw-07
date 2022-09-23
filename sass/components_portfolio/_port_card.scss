@@ -1,4 +1,10 @@
-.cards_cardmain {
+/* клас розміщення карток */
+.main-portfolio__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.main-portfolio__cardmain {
     border: solid 1px#eeeeee;
     position: relative;
     overflow: hidden;
@@ -10,20 +16,21 @@
     }
 }
 
-.cards_cardmain-link-wrappe {
-    max-width: 100%;
-    height: 100%;
-}
-.cards_cardmain-link-wrapper_img {
+.main-portfolio__link-wrapper {
     position: relative;
     overflow: hidden;
-    &:hover .overlay,
-    &:focus .overlay {
+    &:hover .main-portfolio__overlay,
+    &:focus .main-portfolio__overlay {
         transform: translate(0, 0);
     }
 }
 
-.overlay {
+.main-portfolio__img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-portfolio__overlay {
     position: absolute;
     padding-top: 63px;
     padding-right: 24px;
@@ -37,23 +44,17 @@
     letter-spacing: 0.03em;
     color: var(--white-main-color);
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translate(0, 102%);
+    transform: translate(0, 140%);
     transition: transform 500ms linear;
 }
 
-/* клас розміщення карток */
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.cards_cardmain_description {
+.main-portfolio__description {
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
     padding-right: 24px;
 }
-.cards_cardmain_description__subtitle {
+.main-portfolio__subtitle {
     font-family: "Roboto";
     color: var(--h2-h3-text-color);
     font-weight: 700;
@@ -65,7 +66,7 @@
 }
 
 /* опис постерів */
-.cards_cardmain_description__type {
+.main-portfolio__paragraph {
     color: var(--color-link);
     font-size: 16px;
     line-height: 187.5%;
